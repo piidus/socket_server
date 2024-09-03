@@ -86,7 +86,7 @@ def main():
     server.bind((SERVER, port))
     server.listen(5)
     print(f"Server listening on port {port}")
-    log.info(f"Server listening on port 9999 & server:: {SERVER}")
+    log.info(f"Server listening on port {port} & server:: {SERVER}")
     
     try:
         while True:
