@@ -82,9 +82,10 @@ def main():
     load_clients_data()
     SERVER = socket.gethostbyname(socket.gethostname())
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((SERVER, 9998))
+    port = 9998
+    server.bind((SERVER, port))
     server.listen(5)
-    print("Server listening on port 9999")
+    print(f"Server listening on port {port}")
     log.info(f"Server listening on port 9999 & server:: {SERVER}")
     
     try:
